@@ -3,9 +3,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends ffmpeg git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir HerokuKiMummy \
-    && cd HerokuKiMummy \
-    && git clone https://github.com/BlackVirusOfficial/HerokuKiMummy
-WORKDIR /HerokuKiMummy/HerokuKiMummy
+    && mkdir herokurandi \
+    && cd herokurandi \
+    && git clone https://github.com/BlackVirusOfficial/herokurandi
+WORKDIR /herokurandi/herokurandi
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 CMD bash start
