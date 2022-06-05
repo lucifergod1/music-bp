@@ -3,9 +3,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends ffmpeg git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-    && mkdir herokurandi \
-    && cd herokurandi \
-    && git clone https://github.com/BlackVirusOfficial/herokurandi
-WORKDIR /herokurandi/herokurandi
+    && mkdir YukkiMusicBot \
+    && cd YukkiMusicBot \
+    && git clone https://github.com/TeamYukki/YukkiMusicBot
+WORKDIR /YukkiMusicBot/YukkiMusicBot
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 CMD bash start
