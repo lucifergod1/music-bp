@@ -6,6 +6,6 @@ RUN apt-get update \
     && mkdir musicbot \
     && cd musicbot \
     && git clone https://github.com/lucifergod1/musicbot
-WORKDIR /YukkiMusicBot/YukkiMusicBot
+WORKDIR /musicbot/musicbot
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 CMD bash start
